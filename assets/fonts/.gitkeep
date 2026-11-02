@@ -1,0 +1,3 @@
+Not used today — DM Sans and Manrope load from Google Fonts (see index.html).
+Drop self-hosted .woff2 files here if DigitalOps later moves off Google Fonts,
+and update the @font-face rules + font-family stacks in css/tokens.css to match.

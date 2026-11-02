@@ -1,0 +1,25 @@
+/* Cross-cutting responsive rules not already scoped inside layout.css / components.css
+   (those two files hold each component's own breakpoint overrides, next to the rules they change). */
+
+@media (max-width: 767px) {
+  body { font-size: 15px; }
+
+  .slider-row { flex-wrap: wrap; }
+  .slider-row .s-meta { width: 100%; }
+  .slider-row input[type="range"] { width: 100%; }
+
+  .btn, .tab, button { min-height: 40px; }
+  .add-row-btn, .copy-btn { width: 100%; }
+
+  .navfoot { flex-direction: column; }
+  .navfoot .btn { width: 100%; }
+
+  .lesson-stepper { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-col { max-width: 640px; }
+}
+
+/* Never let a wide element (prompt body, tables) force page-level horizontal scroll */
+.prompt-body, table { max-width: 100%; overflow-x: auto; }

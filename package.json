@@ -1,0 +1,13 @@
+{
+  "name": "digitalops-offer-engineering",
+  "version": "1.0.0",
+  "description": "DigitalOps Offer Engineering — a static, no-backend interactive guide (eight modules) that turns a customer's expertise into a structured Offer Blueprint.",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "serve": "npx --yes serve ."
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

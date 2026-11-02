@@ -1,0 +1,32 @@
+{
+  "id": "m0",
+  "number": 0,
+  "code": "00",
+  "title": "Orientation",
+  "framework": null,
+  "deliverable": null,
+  "lessons": [
+    {
+      "id": "0.1",
+      "title": "How Offer Engineering works",
+      "readTime": "2 min read",
+      "status": "approved",
+      "body": [
+        "Offer Engineering is the first practical system in the DigitalOps CREATE library. It exists to help you turn knowledge, professional experience, or a practical skill into a clearly positioned digital product offer — not a vague idea, a finished document you could hand to a customer.",
+        "Rather than starting with a product format, you'll work through eight short modules that build on each other: understanding the market, mapping the real problems, designing an outcome worth wanting, structuring the offer, pricing it, naming it, and preparing a validation test. Each module ends with a short exercise and a ready-to-use AI prompt, and every answer you give feeds the next module — you're never asked to repeat yourself.",
+        "By the end, all nine pieces compile automatically into your Offer Blueprint — a single, polished, exportable document. That's the actual product: not the lessons, the finished Blueprint."
+      ],
+      "insight": "This sequence can't be reordered — each module needs the output of the one before it. Resist the urge to jump to pricing or naming early; a name or price with nothing behind it is the most common reason a first offer doesn't sell."
+    }
+  ],
+  "exercise": {
+    "type": "diagnostic",
+    "instructions": "One question sets your starting context. It doesn't skip you past any module — everyone completes M1–7 in full.",
+    "question": "Where are you starting from?",
+    "options": [
+      { "value": "new", "label": "I'm starting from a skill or expertise — I don't have an offer yet", "hint": "You'll build your Target Customer Profile and Problem Inventory from scratch in M1 and M2." },
+      { "value": "existing", "label": "I already sell something, but it was never built this rigorously", "hint": "You'll use your current offer as the starting material in M1 and M2, re-examining who it's really for and what problems it actually solves." }
+    ]
+  },
+  "prompt": null
+}

@@ -1,0 +1,30 @@
+/* Print stylesheet — used only when exporting the Offer Blueprint.
+   Everything except #print-root is hidden; #print-root is built fresh by blueprint-screen.js
+   right before window.print() is called, so it always reflects the latest saved answers.
+   #app-root is hidden via display:none (not just visibility) so its full on-screen height
+   — and the dark theme's body background showing through that space on any page after the
+   first — doesn't produce blank/black pages in the printed or saved-as-PDF output. */
+@media print {
+  #app-root { display: none; }
+  body { background: #fff; }
+  body * { visibility: hidden; }
+  #print-root, #print-root * { visibility: visible; }
+  #print-root {
+    position: absolute; left: 0; top: 0; width: 100%;
+    background: #fff; color: #1a1712; padding: 32px;
+  }
+  #print-root .print-wordmark { font-size: 11px; letter-spacing: 2px; color: #6b6354; text-transform: uppercase; margin-bottom: 4px; }
+  #print-root h1 { font-family: 'DM Sans', sans-serif; font-size: 28px; margin-bottom: 4px; color: #1a1712; }
+  #print-root .print-tagline { color: #6b6354; margin-bottom: 32px; font-size: 13px; }
+  #print-root section { break-inside: avoid; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #ddd6c8; }
+  #print-root section.print-page-break { break-before: page; page-break-before: always; }
+  #print-root h2 { font-family: 'DM Sans', sans-serif; font-size: 15px; color: #856420; margin-bottom: 8px; }
+  #print-root p { font-size: 13px; line-height: 20px; color: #332e24; margin: 0 0 6px; }
+  #print-root .print-missing { color: #a04e2e; font-style: italic; }
+  /* Summary text can contain block children (lists, labelled lines); keep them at body size, not browser default */
+  #print-root section > div:not(.print-field), #print-root section li { font-size: 13px; line-height: 20px; color: #332e24; }
+  #print-root .print-field { font-size: 13px; line-height: 20px; color: #332e24; margin: 0 0 6px; }
+  #print-root .print-field-label { font-weight: 700; color: #1a1712; }
+  #print-root .print-not-provided { color: #6b6354; font-style: italic; }
+  @page { margin: 18mm; }
+}

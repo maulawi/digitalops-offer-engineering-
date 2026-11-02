@@ -1,0 +1,22 @@
+# Dependencies (none are required to run this project — see README §4 —
+# but this is here in case tooling is added later)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files — this project has no environment variables today (see README §3),
+# but any future local secrets should never be committed
+.env
+.env.local
+.env.*.local
